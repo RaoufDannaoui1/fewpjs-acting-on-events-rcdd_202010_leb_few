@@ -32,7 +32,7 @@ function moveDodgerUp() {
   let leftNumbers = dodger.style.bottom.replace("px", "");
   let bottom = parseInt(leftNumbers, 10);
 
-  if (left > 0) {
+  if (bottom >= 0) {
     dodger.style.bottom = `${bottom - 1}px`;
   }
 }
