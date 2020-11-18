@@ -27,3 +27,17 @@ document.addEventListener("keydown", function(e) {
     moveDodgerRight();
   }
 });
+///////////////////////////////////////////
+function moveDodgerUp() {
+  let leftNumbers = dodger.style.bottom.replace("px", "");
+  let bottom = parseInt(leftNumbers, 10);
+
+  if (left > 0) {
+    dodger.style.bottom = `${bottom + 1}px`;
+  }
+}
+document.addEventListener("keydown", function(e) {
+  if (e.key === "ArrowUp") {
+    moveDodgerUp();
+  }
+});
