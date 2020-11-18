@@ -16,9 +16,9 @@ document.addEventListener("keydown", function(e) {
 // Your code here
 function moveDodgerRight() {
   let rightNumbers = dodger.style.right.replace("px", "");
-  let left = parseInt(leftNumbers, 10);
+  let right = parseInt(rightNumbers, 10);
 
-  if (left > 0) {
+  if (right > 0) {
     dodger.style.right = `${left + 1}px`;
   }
 }
