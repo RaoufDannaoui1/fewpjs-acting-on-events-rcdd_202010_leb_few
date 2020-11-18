@@ -33,7 +33,7 @@ function moveDodgerUp() {
   let bottom = parseInt(leftNumbers, 10);
 
   if (bottom >= 0) {
-    dodger.style.bottom = `${bottom - 1}px`;
+    dodger.style.bottom = `${bottom + 1}px`;
   }
 }
 document.addEventListener("keydown", function(e) {
