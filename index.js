@@ -14,16 +14,16 @@ document.addEventListener("keydown", function(e) {
 });
 
 // Your code here
-function moveDodgerRight() {
-  let rightNumbers = dodger.style.right.replace("px", "");
-  let right = parseInt(rightNumbers, 10);
+function moveDodgerLeft() {
+  let leftNumbers = dodger.style.left.replace("px", "");
+  let left = parseInt(leftNumbers, 10);
 
-  if (right > 0) {
-    dodger.style.right = `${left + 1}px`;
+  if (left > 0) {
+    dodger.style.left = `${left + 1}px`;
   }
 }
 document.addEventListener("keydown", function(e) {
   if (e.key === "ArrowRight") {
-    moveDodgerRight();
+    moveDodgerLeft();
   }
 });
